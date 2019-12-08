@@ -29,7 +29,9 @@
       const template = document.createElement('template');
       template.innerHTML = `<form class="pure-form pure-form-stacked" action="/price" method="get">
       <input type="hidden" name="car_id" />
+      <label>Rent start date (in ISO format: "2019-09-11T13:00:00Z")</label>
       <label><input type="datetime-local" name="date_start" /></label>
+      <label>Rent end date (in ISO format: "2019-10-11T13:30:00Z")</label>
       <label><input type="datetime-local" name="date_end" /></label>
       <button>Get price</button>
       </form>`;
